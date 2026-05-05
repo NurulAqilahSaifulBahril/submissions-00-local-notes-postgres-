@@ -9,7 +9,7 @@
 ## Evidence Postgres container is up
 
 <img width="718" height="267" alt="docker ps" src="https://github.com/user-attachments/assets/765cbc91-2526-4aa0-8912-ae371a4beb95" />
-<br><br>
+<br>
 
 ## App + DB
 
