@@ -22,4 +22,18 @@ Initialize Git, commit the code (docker-compose, app, requirements.txt).
 Push to GitHub and send you the repository link.
 Add a short README: how to start Postgres in Docker, how to run the app, and which localhost URL to open.
 
-**2. cc **
+**2. Show me if my docker desktop is running and please please generate docker-info.txt**
+
+PowerShell, run: docker info 
+
+**3. verify prosgres is up**
+
+docker ps shows:
+- Container: notes-app-postgres
+- Image: postgres:16
+- Status: Up ... (healthy)
+- Port mapping: 5432->5432
+
+**4. 
+
+
