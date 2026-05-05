@@ -1,6 +1,6 @@
 # Evidence
 
-## Evidence Docker Desktop is running
+## Docker Desktop
 
 Docker Desktop showing the engine running `docker info` output
 
@@ -11,12 +11,17 @@ to view full refer [docker-info.txt](https://github.com/user-attachments/files/2
 <br>
 
 
-## Evidence Postgres container is up
+## Postgres container
 
+Proof the container is up `docker ps` showing `postgres`
+
+<br>
 <img width="718" height="267" alt="docker ps" src="https://github.com/user-attachments/assets/765cbc91-2526-4aa0-8912-ae371a4beb95" />
 <br>
 
 ## App + DB
+
+Proof the app serves on localhost and persists notes
 
  a. url: http://localhost:3000 
 
