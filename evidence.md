@@ -1,17 +1,16 @@
 # Evidence
-# Assignment 00: Local Notes App (Beginner Bridge)
 
-1. **Evidence Docker Desktop is running**
+## Evidence Docker Desktop is running
 
   <img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
 
   to view full refer [docker-info.txt](https://github.com/user-attachments/files/27390390/docker-info.txt)
 
-2. **Evidence Postgres container is up**
+##Evidence Postgres container is up
 
 <img width="718" height="267" alt="docker ps" src="https://github.com/user-attachments/assets/765cbc91-2526-4aa0-8912-ae371a4beb95" />
 
-3. **App + DB**
+## App + DB
 
  a. url: http://localhost:3000 
 
@@ -33,5 +32,5 @@
 <img width="1871" height="961" alt="note still there when reload" src="https://github.com/user-attachments/assets/8822523a-7765-4e1b-8d57-e505da2209aa" />
 
 
-4. **Postgres data**
+## Postgres data
 
