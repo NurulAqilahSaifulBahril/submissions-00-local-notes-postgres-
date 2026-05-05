@@ -3,9 +3,9 @@
 
 **1. Evidence Docker Desktop is running**
 
-  (https://github.com/user-attachments/files/27390114/docker-info.txt)<img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
+  <img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
 
-  to view full refer [docker-info.txt]
+  to view full refer (https://github.com/user-attachments/files/27390114/docker-info.txt)[docker-info.txt]
 
 3. Evidence Postgres container is up
 
