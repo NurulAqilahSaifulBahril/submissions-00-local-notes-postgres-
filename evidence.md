@@ -11,5 +11,6 @@
 
 <img width="718" height="267" alt="docker ps" src="https://github.com/user-attachments/assets/765cbc91-2526-4aa0-8912-ae371a4beb95" />
 
-3. 
-4. + Postgres container + app on localhost work
+**3. Postgres data**
+
+**4. Git**
