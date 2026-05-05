@@ -3,10 +3,13 @@
 ## Evidence Docker Desktop is running
 
 Docker Desktop showing the engine running `docker info` output
+
+to view full refer [docker-info.txt](https://github.com/user-attachments/files/27390390/docker-info.txt)
+
+<br>
 <img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
 <br>
 
-  to view full refer [docker-info.txt](https://github.com/user-attachments/files/27390390/docker-info.txt)
 
 ## Evidence Postgres container is up
 
