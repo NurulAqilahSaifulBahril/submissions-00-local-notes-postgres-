@@ -31,17 +31,20 @@ Proof the app serves on localhost and persists notes
  - notes-app-postgres with PORTS showing 0.0.0.0:5432->5432/tcp
  
  c. app running on localhost
- 
+
+ <br>
 <img width="772.5" height="444" alt="app running on localhost" src="https://github.com/user-attachments/assets/26b2c43c-8d6a-4c59-b24d-74f481f534d5" />
 <br>
 
  d. note saved
 
+<br>
 <img width="1882" height="907" alt="note saved" src="https://github.com/user-attachments/assets/35589edd-95eb-418b-b0ea-4941b7d0eed4" />
 <br>
 
  e. after refresh (note still there)
 
+<br>
 <img width="1871" height="961" alt="note still there when reload" src="https://github.com/user-attachments/assets/8822523a-7765-4e1b-8d57-e505da2209aa" />
 <br>
 
