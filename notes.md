@@ -2,7 +2,7 @@
 
 What you asked the AI, what confused you, what you decided
 
-*1. Im bilding a local host app. Please summarise a simple plan for me and can I be able to execute by wednesday?
+**1. Im bilding a local host app. Please summarise a simple plan for me and can I be able to execute by wednesday?
 
 Day 1 — Database & environment
 
@@ -22,4 +22,4 @@ Initialize Git, commit the code (docker-compose, app, requirements.txt).
 Push to GitHub and send you the repository link.
 Add a short README: how to start Postgres in Docker, how to run the app, and which localhost URL to open.
 
-*2. cc
+**2. cc
