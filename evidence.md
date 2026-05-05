@@ -6,9 +6,9 @@
 
   to view full refer [docker-info.txt](https://github.com/user-attachments/files/27390390/docker-info.txt)
 
-##Evidence Postgres container is up
+## Evidence Postgres container is up
 
-<img width="718" height="267" alt="docker ps" src="https://github.com/user-attachments/assets/765cbc91-2526-4aa0-8912-ae371a4beb95" />
+<img width="718" height="267" alt="docker ps" src="https://github.com/user-attachments/assets/765cbc91-2526-4aa0-8912-ae371a4beb95" style="margin-right:20px;" />
 
 ## App + DB
 
