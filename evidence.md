@@ -50,3 +50,13 @@ Proof the app serves on localhost and persists notes
 
 ## Postgres data
 
+Proof rows exist in the database from your test 
+
+`docker exec … psql … SELECT`
+
+docker exec notes-app-postgres psql -U notes_user -d notes_app -c "SELECT COUNT(*) AS notes_count FROM notes; SELECT id, title, updated_at FROM notes ORDER BY updated_at DESC LIMIT 5;"
+
+expected proof output (from your environment) is:
+- notes_count = 1
+- row exists, e.g.
+98cb598e-943c-43f1-9455-00bd437ba4db | db-proof-20260505-171032 | 2026-05-05 ...
