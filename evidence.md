@@ -21,7 +21,7 @@
  
  a. app running on localhost
  
- <img width="1545" height="888" alt="app running on localhost" src="https://github.com/user-attachments/assets/26b2c43c-8d6a-4c59-b24d-74f481f534d5" />
+ <img width="772.5" height="444" alt="app running on localhost" src="https://github.com/user-attachments/assets/26b2c43c-8d6a-4c59-b24d-74f481f534d5" />
 
  b. note saved
  
