@@ -2,7 +2,8 @@
 
 ## Evidence Docker Desktop is running
 
-  <img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
+<img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
+<br>
 
   to view full refer [docker-info.txt](https://github.com/user-attachments/files/27390390/docker-info.txt)
 
@@ -22,16 +23,17 @@
  
  c. app running on localhost
  
- <img width="772.5" height="444" alt="app running on localhost" src="https://github.com/user-attachments/assets/26b2c43c-8d6a-4c59-b24d-74f481f534d5" />
-
+<img width="772.5" height="444" alt="app running on localhost" src="https://github.com/user-attachments/assets/26b2c43c-8d6a-4c59-b24d-74f481f534d5" />
+<br>
  d. note saved
 
- <img width="1882" height="907" alt="note saved" src="https://github.com/user-attachments/assets/35589edd-95eb-418b-b0ea-4941b7d0eed4" />
+<img width="1882" height="907" alt="note saved" src="https://github.com/user-attachments/assets/35589edd-95eb-418b-b0ea-4941b7d0eed4" />
+<br>
 
  e. after refresh (note still there)
 
 <img width="1871" height="961" alt="note still there when reload" src="https://github.com/user-attachments/assets/8822523a-7765-4e1b-8d57-e505da2209aa" />
-
+<br>
 
 ## Postgres data
 
