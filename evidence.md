@@ -4,7 +4,7 @@ Commands you ran, outputs that prove Docker Desktop + Postgres container + app o
 
 1. Evidence Docker Desktop is running
 
-<img width="992" height="1026" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
+<img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
 
   to view full refer docker-info.txt
 
