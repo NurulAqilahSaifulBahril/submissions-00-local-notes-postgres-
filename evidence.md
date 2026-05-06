@@ -65,13 +65,11 @@ Proof the app serves on localhost and persists notes
 
 <br>
 <img width="941" height="453.5" alt="note saved" src="https://github.com/user-attachments/assets/35589edd-95eb-418b-b0ea-4941b7d0eed4" />
-<br>
 
  e. after refresh (note still there)
 
 <br>
 <img width="935.5" height="480.5" alt="note still there when reload" src="https://github.com/user-attachments/assets/8822523a-7765-4e1b-8d57-e505da2209aa" />
-<br>
 
 ## Postgres data
 
