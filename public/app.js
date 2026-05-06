@@ -98,7 +98,7 @@
   const screenHome = document.getElementById("screenHome");
   const screenWorkspace = document.getElementById("screenWorkspace");
   const homeNewNote = document.getElementById("homeNewNote");
-  const homeOpenWorkspace = document.getElementById("homeOpenWorkspace");
+  const homeTagFilter = document.getElementById("homeTagFilter");
   const homeRecentList = document.getElementById("homeRecentList");
   const homeRecentEmpty = document.getElementById("homeRecentEmpty");
   const backHome = document.getElementById("backHome");
@@ -148,12 +148,38 @@
     screenWorkspace.hidden = false;
   }
 
+  function extractTags(text) {
+    const tags = [];
+    const seen = new Set();
+    const re = /(^|\s)#([a-z0-9_-]+)/gi;
+    let m = null;
+    while ((m = re.exec(String(text ?? "")))) {
+      const tag = m[2].toLowerCase();
+      if (!seen.has(tag)) {
+        seen.add(tag);
+        tags.push(tag);
+      }
+    }
+    return tags;
+  }
+
   async function loadRecentForHome() {
     try {
       const recent = await api.get("/notes/recent?limit=12");
+      const rawFilter = String(homeTagFilter?.value || "").trim().toLowerCase();
+      const normalizedFilter = rawFilter.startsWith("#") ? rawFilter.slice(1) : rawFilter;
+      const filteredRecent = normalizedFilter
+        ? recent.filter((n) => {
+            const tags = extractTags((n.title || "") + " " + (n.body || ""));
+            return tags.some((t) => t.includes(normalizedFilter));
+          })
+        : recent;
       homeRecentList.innerHTML = "";
-      homeRecentEmpty.hidden = recent.length > 0;
-      for (const n of recent) {
+      homeRecentEmpty.hidden = filteredRecent.length > 0;
+      homeRecentEmpty.textContent = normalizedFilter
+        ? "No recent notes match this tag yet."
+        : "No notes yet. Create one to get started.";
+      for (const n of filteredRecent) {
         const li = document.createElement("li");
         const btn = document.createElement("button");
         btn.type = "button";
@@ -433,7 +459,9 @@
     }
   });
 
-  homeOpenWorkspace.addEventListener("click", () => openWorkspace());
+  homeTagFilter.addEventListener("input", () => {
+    loadRecentForHome();
+  });
 
   backHome.addEventListener("click", async () => {
     await flushSave();

@@ -18,14 +18,23 @@
         <div class="home-inner">
           <header class="home-header">
             <h1 class="home-title">Notes</h1>
-            <p class="home-tagline">Markdown notes, auto-saved to Postgres. Open the workspace to edit.</p>
+            <p class="home-tagline">Markdown notes, auto-saved to Postgres. Start from a new note or jump into recent work.</p>
           </header>
           <div class="home-actions">
             <button type="button" class="btn btn-primary" id="homeNewNote">New note</button>
-            <button type="button" class="btn btn-ghost" id="homeOpenWorkspace">Open workspace</button>
           </div>
           <div class="home-recent">
             <h2 class="home-recent-title">Recent notes</h2>
+            <div class="search-wrap home-search-wrap">
+              <label for="homeTagFilter" class="visually-hidden">Filter recent notes by tag</label>
+              <input
+                type="search"
+                id="homeTagFilter"
+                class="search"
+                placeholder="Filter recent by tag (example: #todo)"
+                autocomplete="off"
+              />
+            </div>
             <p class="home-recent-empty" id="homeRecentEmpty" hidden>No notes yet. Create one to get started.</p>
             <ul class="home-recent-list" id="homeRecentList" role="list"></ul>
           </div>
