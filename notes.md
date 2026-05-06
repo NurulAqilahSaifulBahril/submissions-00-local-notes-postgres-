@@ -27,7 +27,6 @@ This file is my short record of how I used AI to speed up learning while still d
 - **Why the UI looked “old” after I changed files**: When running via Docker, the running container can still serve an **older copied `public/`** until I **rebuild/restart** the server image/container.
 - **GitHub “only shows some files changed”**: I learned the repo home page highlights the latest commit; older commits can contain the bigger code changes, so I need to check **commit history** or open the file directly.
 - **Tag filter vs “where do tags live”**: The filter matches **hashtags typed inside note text** (title/body), not a separate tags database field (at least in the current version).
-- **Copying the project into another GitHub repo**: I learned I need **write permission** on the destination repo; otherwise `git push` returns **403**.
 
 ## What I decided (my choices + how I verified)
 
