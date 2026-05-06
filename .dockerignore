@@ -1,0 +1,5 @@
+# Build context is repo root — keep node_modules out (Windows symlink issues).
+server/node_modules
+**/node_modules
+.git
+pgdata/

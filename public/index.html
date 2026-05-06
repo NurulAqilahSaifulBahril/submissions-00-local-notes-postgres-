@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <section class="screen screen-home" id="screenHome" aria-label="Home">
+        <div class="home-inner">
+          <header class="home-header">
+            <h1 class="home-title">Notes</h1>
+            <p class="home-tagline">Markdown notes, auto-saved to Postgres. Open the workspace to edit.</p>
+          </header>
+          <div class="home-actions">
+            <button type="button" class="btn btn-primary" id="homeNewNote">New note</button>
+            <button type="button" class="btn btn-ghost" id="homeOpenWorkspace">Open workspace</button>
+          </div>
+          <div class="home-recent">
+            <h2 class="home-recent-title">Recent notes</h2>
+            <p class="home-recent-empty" id="homeRecentEmpty" hidden>No notes yet. Create one to get started.</p>
+            <ul class="home-recent-list" id="homeRecentList" role="list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen screen-workspace" id="screenWorkspace" hidden aria-label="Workspace">
+        <div class="workspace-topbar">
+          <button type="button" class="btn btn-ghost btn-sm" id="backHome" title="Back to home">← Home</button>
+          <span class="workspace-status" id="saveStatus" aria-live="polite"></span>
+        </div>
+        <div class="workspace">
+          <aside class="panel panel-folders" aria-label="Folders">
+            <header class="panel-header">
+              <h2 class="panel-title">Folders</h2>
+              <button type="button" class="btn btn-primary btn-sm" id="newFolder" title="New folder">+</button>
+            </header>
+            <ul class="folder-list" id="folderList" role="list"></ul>
+          </aside>
+
+          <aside class="panel panel-notes" aria-label="Notes in folder">
+            <header class="panel-header">
+              <h2 class="panel-title" id="notesPanelTitle">Notes</h2>
+              <button type="button" class="btn btn-primary btn-sm" id="newNote" title="New note in folder">+</button>
+            </header>
+            <div class="search-wrap">
+              <label for="search" class="visually-hidden">Filter notes</label>
+              <input
+                type="search"
+                id="search"
+                class="search"
+                placeholder="Filter notes…"
+                autocomplete="off"
+              />
+            </div>
+            <div class="note-tiles" id="noteTiles" role="list"></div>
+          </aside>
+
+          <main class="panel panel-editor">
+            <div class="empty-state" id="emptyState">
+              <p class="empty-title">Select or create a note</p>
+              <p class="empty-hint">Markdown. Edits save automatically.</p>
+            </div>
+
+            <div class="editor" id="editor" hidden>
+              <header class="editor-header">
+                <input
+                  type="text"
+                  id="noteTitle"
+                  class="note-title-input"
+                  placeholder="Untitled"
+                  maxlength="200"
+                  aria-label="Note title"
+                />
+                <div class="editor-actions">
+                  <button type="button" class="btn btn-danger btn-sm" id="deleteNote" title="Delete note">
+                    Delete
+                  </button>
+                </div>
+              </header>
+              <p class="meta" id="noteMeta"></p>
+              <div class="editor-body-toolbar">
+                <div class="segmented" role="tablist" aria-label="Editor view">
+                  <button type="button" role="tab" class="seg-btn is-active" id="tabWrite" aria-selected="true">
+                    Write
+                  </button>
+                  <button type="button" role="tab" class="seg-btn" id="tabPreview" aria-selected="false">
+                    Preview
+                  </button>
+                </div>
+              </div>
+              <div class="editor-body-panes">
+                <label for="noteBody" class="visually-hidden">Note content (Markdown)</label>
+                <textarea
+                  id="noteBody"
+                  class="note-body"
+                  placeholder="Markdown — start writing…"
+                  spellcheck="true"
+                ></textarea>
+                <div
+                  id="notePreview"
+                  class="markdown-preview"
+                  hidden
+                  tabindex="0"
+                  aria-label="Rendered Markdown preview"
+                ></div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked@15.0.6/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.3/dist/purify.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
