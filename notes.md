@@ -17,7 +17,17 @@ What you asked the AI, what confused you, what you decided
 - Dark base theme
  To be run on localhost using docker desktop
 
-5. 
+5. New Nottaking App feature
+
+   1. Remove Open workspace button
+   2. Make home page show:
+      - New Note
+      - Recent Notes
+      - tag filter (important)
+      - change the button color to emerald green 
+     Auto-open workspace when user clicks any recent note
+
+6. Push Git on https://github.com/NurulAqilahSaifulBahril
 
 
 
