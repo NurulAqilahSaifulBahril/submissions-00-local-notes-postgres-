@@ -2,15 +2,14 @@
 
 ## Docker Desktop
 
-Docker Desktop showing the engine running `docker info` output
-
-to view full refer [docker-info.txt](https://github.com/user-attachments/files/27390390/docker-info.txt)
+- Docker Desktop showing the engine running `docker info` output
+- to view full refer [docker-info.txt](https://github.com/user-attachments/files/27390390/docker-info.txt)
 
 <br>
 <img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
 <br>
 
-- docker was blocked as i cannot run as administrator
+- earlier constraint: docker was blocked as i cannot run as administrator
   
 ## Postgres container
 
@@ -27,14 +26,19 @@ Proof the app serves on localhost and persists notes
 
  a. **Local Notetaking app**: 
     http://localhost:3000 
+    
     **Page HTML**: 
     index.html 
     - structure, scripts, CSS links
+    
     **Frontend**: 
+    
     app.js 
     - runs in the browser; calls /api/...
+    
     /api/health, /api/folders, /api/notes
     - REST API
+    
     **Backend**: 
     server/index.js
     -  API Express app 
