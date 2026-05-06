@@ -27,14 +27,14 @@ Proof the app serves on localhost and persists notes
  a. **Local Notetaking app**: 
     http://localhost:3000 
 
-    **Repo Github Link**:
+    1. **Repo Github Link**:
     https://github.com/you/notes-app
     
-    **Page HTML**: 
+    2. **Page HTML**: 
     index.html 
     - structure, scripts, CSS links
     
-    **Frontend**: 
+    3. **Frontend**: 
     
     app.js 
     - runs in the browser; calls /api/...
@@ -42,7 +42,7 @@ Proof the app serves on localhost and persists notes
     /api/health, /api/folders, /api/notes
     - REST API
     
-    **Backend**: 
+    4. **Backend**: 
     server/index.js
     -  API Express app 
      server/db.js
