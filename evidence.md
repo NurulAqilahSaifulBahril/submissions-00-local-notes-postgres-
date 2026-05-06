@@ -64,13 +64,13 @@ Proof the app serves on localhost and persists notes
  d. note saved
 
 <br>
-<img width="1882" height="907" alt="note saved" src="https://github.com/user-attachments/assets/35589edd-95eb-418b-b0ea-4941b7d0eed4" />
+<img width="941" height="453.5" alt="note saved" src="https://github.com/user-attachments/assets/35589edd-95eb-418b-b0ea-4941b7d0eed4" />
 <br>
 
  e. after refresh (note still there)
 
 <br>
-<img width="1871" height="961" alt="note still there when reload" src="https://github.com/user-attachments/assets/8822523a-7765-4e1b-8d57-e505da2209aa" />
+<img width="935.5" height="480.5" alt="note still there when reload" src="https://github.com/user-attachments/assets/8822523a-7765-4e1b-8d57-e505da2209aa" />
 <br>
 
 ## Postgres data
@@ -88,6 +88,6 @@ expected proof output (from your environment) is:
 
 ## Git
 
-<img width="970" height="505" alt="Git push" src="https://github.com/user-attachments/assets/7c9ffdfb-8d4c-41c9-b7a9-c06ae82c5ab0" />
+<img width="485" height="252.5" alt="Git push" src="https://github.com/user-attachments/assets/7c9ffdfb-8d4c-41c9-b7a9-c06ae82c5ab0" />
 
 
