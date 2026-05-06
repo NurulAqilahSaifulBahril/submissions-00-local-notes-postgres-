@@ -3,7 +3,7 @@
 This file is my short record of how I used AI to speed up learning while still doing the verification myself.
 
 ## What I asked the AI
-
+ 
 - **Project planning**: I asked for a simple end-to-end plan to build a local notes app that uses **Docker Desktop + PostgreSQL**, and whether it was realistic to finish by Wednesday.
 - **Docker sanity checks**: I asked how to confirm **Docker Desktop / Docker Engine** is actually running, and to help capture evidence (for example `docker info` / `docker ps` style output saved as `docker-info.txt`).
 - **Database verification**: I asked how to confirm **Postgres is up** (healthy container, port listening, and that the app can query it).
