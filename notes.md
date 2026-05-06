@@ -1,23 +1,47 @@
-# Notes
+# Notes (learning log)
 
-What you asked the AI, what confused you, what you decided
+This file is my short record of how I used AI to speed up learning while still doing the verification myself.
 
-1. Im bilding a local host app. Please summarise a simple plan for me and can I be able to execute by wednesday?
+## What I asked the AI
 
-2. Show me if my docker desktop is running and please please generate docker-info.txt
+- **Project planning**: I asked for a simple end-to-end plan to build a local notes app that uses **Docker Desktop + PostgreSQL**, and whether it was realistic to finish by Wednesday.
+- **Docker sanity checks**: I asked how to confirm **Docker Desktop / Docker Engine** is actually running, and to help capture evidence (for example `docker info` / `docker ps` style output saved as `docker-info.txt`).
+- **Database verification**: I asked how to confirm **Postgres is up** (healthy container, port listening, and that the app can query it).
+- **Feature understanding**: I asked the AI to explain the main screens and flows:
+  - Home: **New note**, open recent notes, see recents
+  - Workspace: folders (left), note list/tiles (middle), editor + markdown preview (right)
+  - **Autosave** behavior (debounced saves to the API → Postgres)
+  - **Create/delete folders** and **delete notes**
+  - Dark theme styling
+- **UI change request**: I asked for help implementing a simpler home flow:
+  - Remove **Open workspace**
+  - Keep **New note** + **Recent notes**
+  - Add a **tag filter** on Home (based on hashtags like `#todo` in title/body)
+  - Change primary button styling to **emerald green**
+  - Keep behavior where clicking a recent note **opens the editor workspace automatically**
+- **Git/GitHub workflow**: I asked how pushing works (that Git uploads files via commits, not manual copy/paste), and for help pushing to my repo.
 
-3. verify prosgres is up
+## What confused me (and what I had to re-check)
 
-4. The Notetaking APP
+- **Why `http://localhost:3000` sometimes refused to connect**: I learned this usually means the **server process/container wasn’t running**, not a Chrome problem.
+- **Why the UI looked “old” after I changed files**: When running via Docker, the running container can still serve an **older copied `public/`** until I **rebuild/restart** the server image/container.
+- **GitHub “only shows some files changed”**: I learned the repo home page highlights the latest commit; older commits can contain the bigger code changes, so I need to check **commit history** or open the file directly.
+- **Tag filter vs “where do tags live”**: The filter matches **hashtags typed inside note text** (title/body), not a separate tags database field (at least in the current version).
+- **Copying the project into another GitHub repo**: I learned I need **write permission** on the destination repo; otherwise `git push` returns **403**.
 
-- Home page = new note, load note, and see recent note
-- Auto save, there is no save load features, all changes are saved automatically to postgres 
-- Editor ui = lift panel = project folder, center panel = note list (note tile), right panel = typing area
-- Add delete folder, delete notes function 
-- Dark base theme
- To be run on localhost using docker desktop
+## What I decided (my choices + how I verified)
 
-5. 
-
-
-
+- **Run Postgres in Docker Desktop** using the project’s `compose.yaml`, because that matches the assignment expectation (local Docker Postgres, persistent data).
+- **Treat the app as three layers I can name in a demo**:
+  - Browser UI: `public/index.html`, `public/app.js`, `public/styles.css`
+  - API server: `server/index.js` (+ `server/db.js`)
+  - Database: Postgres tables created/used by the server (folders + notes)
+- **Verify with real checks**, not assumptions:
+  - Containers running (`docker compose ps` / `docker ps`)
+  - API health (`/api/health`)
+  - Persistence: create a note → refresh → note still there
+- **Keep secrets out of Git**:
+  - Use `server/.env` locally
+  - Commit `server/.env.example` as the safe template
+- **Use hashtags for the Home tag filter** (example: `#todo`, `#important`) because it’s the simplest approach without changing the database schema.
+- **Keep my public submission repo** as the primary link I share, and only copy into the company assignment repo if I get access (or open a PR), because permissions matter.
