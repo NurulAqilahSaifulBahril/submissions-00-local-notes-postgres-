@@ -2,13 +2,13 @@
 
 What you asked the AI, what confused you, what you decided
 
-**1. Im bilding a local host app. Please summarise a simple plan for me and can I be able to execute by wednesday?**
+1. **Im bilding a local host app. Please summarise a simple plan for me and can I be able to execute by wednesday?**
 
-Day 1 — Database & environment
+`Day 1 — Database & environment
 
 Install/verify Docker Desktop and run PostgreSQL in Docker (docker compose or equivalent).
 Confirm I can connect from my machine (e.g. port mapped to localhost).
-Create the notes table in Postgres.
+Create the notes table in Postgres.`
 
 Day 2 — Application
 
@@ -22,11 +22,11 @@ Initialize Git, commit the code (docker-compose, app, requirements.txt).
 Push to GitHub and send you the repository link.
 Add a short README: how to start Postgres in Docker, how to run the app, and which localhost URL to open.
 
-**2. Show me if my docker desktop is running and please please generate docker-info.txt**
+2. **Show me if my docker desktop is running and please please generate docker-info.txt**
 
 PowerShell, run: docker info 
 
-**3. verify prosgres is up**
+3. **verify prosgres is up**
 
 docker ps shows:
 - Container: notes-app-postgres
@@ -34,6 +34,14 @@ docker ps shows:
 - Status: Up ... (healthy)
 - Port mapping: 5432->5432
 
-**4. 
+4. **The Notetaking APP**
+
+- Home page = new note, load note, and see recent note
+- Auto save, there is no save load features, all changes are saved automatically to postgres 
+- Editor ui = lift panel = project folder, center panel = note list (note tile), right panel = typing area
+- Add delete folder, delete notes function 
+- Dark base theme
+ To be run on localhost using docker desktop**
+
 
 
