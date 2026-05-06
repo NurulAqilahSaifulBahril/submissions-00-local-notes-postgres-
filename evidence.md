@@ -24,25 +24,22 @@
 
 Proof the app serves on localhost and persists notes
 
- a. **Local Notetaking app**: 
-    http://localhost:3000 
+ a. Local Notetaking app: http://localhost:3000 
 
-    **Repo Github Link**:
+    1. Repo Github Link
     https://github.com/you/notes-app
     
-    **Page HTML**: 
+    2. Page HTML: 
     index.html 
     - structure, scripts, CSS links
     
-    **Frontend**: 
-    
+    3. Frontend: 
     app.js 
     - runs in the browser; calls /api/...
-    
     /api/health, /api/folders, /api/notes
     - REST API
     
-    **Backend**: 
+    4. Backend: 
     server/index.js
     -  API Express app 
      server/db.js
@@ -57,19 +54,18 @@ Proof the app serves on localhost and persists notes
  
  c. app running on localhost
 
-<br>
-<img width="772.5" height="444" alt="app running on localhost" src="https://github.com/user-attachments/assets/26b2c43c-8d6a-4c59-b24d-74f481f534d5" />
-<br>
+<img width="1696" height="865" alt="app running on localhost 1" src="https://github.com/user-attachments/assets/67f6f971-2670-4a2a-8606-dd649dd431ec" />
+
 
  d. note saved
 
-<br>
-<img width="941" height="453.5" alt="note saved" src="https://github.com/user-attachments/assets/35589edd-95eb-418b-b0ea-4941b7d0eed4" />
+<img width="1891" height="905" alt="note saved 1" src="https://github.com/user-attachments/assets/c5c8a3be-50c4-4c91-b1bd-d143a8ac1ad8" />
+
 
  e. after refresh (note still there)
 
-<br>
-<img width="935.5" height="480.5" alt="note still there when reload" src="https://github.com/user-attachments/assets/8822523a-7765-4e1b-8d57-e505da2209aa" />
+<img width="1896" height="912" alt="note still there when reload 1" src="https://github.com/user-attachments/assets/70500313-38e3-46c2-ac73-f157b7cd18c5" />
+
 
 ## Postgres data
 

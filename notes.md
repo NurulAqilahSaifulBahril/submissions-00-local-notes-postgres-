@@ -45,3 +45,14 @@ This file is my short record of how I used AI to speed up learning while still d
   - Commit `server/.env.example` as the safe template
 - **Use hashtags for the Home tag filter** (example: `#todo`, `#important`) because it’s the simplest approach without changing the database schema.
 - **Keep my public submission repo** as the primary link I share, and only copy into the company assignment repo if I get access (or open a PR), because permissions matter.
+
+## Appendix — raw prompt list (optional traceability)
+
+This is the same content as above, but kept closer to my original wording so a reviewer can see what I actually typed.
+
+1. I’m building a localhost app — summarize a simple plan and can I execute by Wednesday?
+2. Show me if Docker Desktop is running and help generate `docker-info.txt`.
+3. Verify Postgres is up.
+4. Notes app requirements: home + recent + autosave + 3-panel workspace + folder/note delete + dark theme + Docker Desktop localhost.
+5. New UI changes: remove Open workspace; home shows New note + recents + tag filter; emerald primary button; recent click opens editor.
+6. Push to GitHub under my account.
