@@ -87,3 +87,7 @@ expected proof output (from your environment) is:
 98cb598e-943c-43f1-9455-00bd437ba4db | db-proof-20260505-171032 | 2026-05-05 ...
 
 ## Git
+
+<img width="970" height="505" alt="Git push" src="https://github.com/user-attachments/assets/7c9ffdfb-8d4c-41c9-b7a9-c06ae82c5ab0" />
+
+
