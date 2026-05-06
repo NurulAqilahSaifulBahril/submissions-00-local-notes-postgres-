@@ -43,7 +43,6 @@ This file is my short record of how I used AI to speed up learning while still d
   - Use `server/.env` locally
   - Commit `server/.env.example` as the safe template
 - **Use hashtags for the Home tag filter** (example: `#todo`, `#important`) because it’s the simplest approach without changing the database schema.
-- **Keep my public submission repo** as the primary link I share, and only copy into the company assignment repo if I get access (or open a PR), because permissions matter.
 
 ## Appendix — raw prompt list (optional traceability)
 
