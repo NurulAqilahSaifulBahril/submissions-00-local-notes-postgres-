@@ -24,25 +24,22 @@
 
 Proof the app serves on localhost and persists notes
 
- a. **Local Notetaking app**: 
-    http://localhost:3000 
+ a. Local Notetaking app: http://localhost:3000 
 
-    1. **Repo Github Link**:
+    1. Repo Github Link
     https://github.com/you/notes-app
     
-    2. **Page HTML**: 
+    2. Page HTML: 
     index.html 
     - structure, scripts, CSS links
     
-    3. **Frontend**: 
-    
+    3. Frontend: 
     app.js 
     - runs in the browser; calls /api/...
-    
     /api/health, /api/folders, /api/notes
     - REST API
     
-    4. **Backend**: 
+    4. Backend: 
     server/index.js
     -  API Express app 
      server/db.js
