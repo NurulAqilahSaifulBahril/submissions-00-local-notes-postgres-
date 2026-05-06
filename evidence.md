@@ -26,6 +26,9 @@ Proof the app serves on localhost and persists notes
 
  a. **Local Notetaking app**: 
     http://localhost:3000 
+
+    **Repo Github Link**:
+    https://github.com/you/notes-app
     
     **Page HTML**: 
     index.html 
