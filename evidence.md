@@ -10,10 +10,12 @@ to view full refer [docker-info.txt](https://github.com/user-attachments/files/2
 <img width="496" height="513" alt="docker info" src="https://github.com/user-attachments/assets/8d9a706d-545c-4ac9-9f24-39247a4acc82" />
 <br>
 
-
+- docker was blocked as i cannot run as administrator
+  
 ## Postgres container
 
-Proof the container is up `docker ps` showing `postgres`
+- data is stored in compose.yaml
+- Proof the container is up `docker ps` showing `postgres`
 
 <br>
 <img width="718" height="267" alt="docker ps" src="https://github.com/user-attachments/assets/765cbc91-2526-4aa0-8912-ae371a4beb95" />
@@ -23,8 +25,24 @@ Proof the container is up `docker ps` showing `postgres`
 
 Proof the app serves on localhost and persists notes
 
- a. url: http://localhost:3000 
+ a. **Local Notetaking app**: 
+    http://localhost:3000 
+    **Page HTML**: 
+    index.html 
+    - structure, scripts, CSS links
+    **Frontend**: 
+    app.js 
+    - runs in the browser; calls /api/...
+    /api/health, /api/folders, /api/notes
+    - REST API
+    **Backend**: 
+    server/index.js
+    -  API Express app 
+     server/db.js
+     - DB acess
 
+    - http://localhost:3000 loads index.html, which loads app.js and styles.css. They are not separate URLs unless explicitly open /app.js; usually  stay on / or path the server maps to index.html.
+ 
  b. server started 
  terminal line:
  - notes-app-server with PORTS showing 0.0.0.0:3000->3000/tcp
@@ -60,3 +78,5 @@ expected proof output (from your environment) is:
 - notes_count = 1
 - row exists, e.g.
 98cb598e-943c-43f1-9455-00bd437ba4db | db-proof-20260505-171032 | 2026-05-05 ...
+
+## Git
