@@ -20,6 +20,7 @@ What you asked the AI, what confused you, what you decided
 5. New Nottaking App feature
 
    1. Remove Open workspace button
+
    2. Make home page show:
       - New Note
       - Recent Notes
@@ -27,7 +28,12 @@ What you asked the AI, what confused you, what you decided
       - change the button color to emerald green 
      Auto-open workspace when user clicks any recent note
 
-6. Push Git on https://github.com/NurulAqilahSaifulBahril
+   3. Most simple task to work with
+
+   4. Flat folders, all notes and folders = record inside postgres 
+markdown
+
+7. Push Git on https://github.com/NurulAqilahSaifulBahril
 
 
 
